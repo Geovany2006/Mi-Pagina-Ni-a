@@ -1,0 +1,146 @@
+
+#botonacepto{
+    display: flex;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    padding: 19px 35px;
+    border-radius: 7px;
+    height: 12%;
+    width: 14%;
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    box-shadow: 5px 8px 9px rebeccapurple;
+    text-decoration: none;
+    background-color: rgba(25, 143, 253, 0.76);
+    animation: latido 4s infinite ease-in;
+}
+#textdeco {
+    text-decoration: none;
+}
+#botonacepto:hover {
+    cursor: pointer;
+    box-shadow: 4px 5px 8px springgreen;
+    background-color: red;
+    animation: botonColor 4s ease-in-out infinite;
+}
+h1 {
+    display: flex;
+    text-align: left;
+    align-items: flex-start;
+
+
+    font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 55px;
+}
+
+#imagen {
+    display: flex;
+    transform: translateX(-30px) translateY(10px);
+    top: 0%;
+    border: 20% solid black;
+    animation: salto 4s ease-in-out infinite;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    background-color: rgb(220, 95, 231);
+    /*height: 100vh;*/
+    overflow: hidden;
+}
+#mensaje {
+    display: flex;
+    align-content: end;
+    transform: translateY(300px) translateX(47%);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+  
+}
+/*#imagen {
+
+}*/
+/*#boton {
+    justify-content: center;
+    align-items:center ;
+    display: flex;
+    justify-content: end;
+    transform: translateX(406px) translateY(-90px);
+}*/
+#boton {
+    border: solid black;
+    position: absolute;
+    padding: 19px 35px;
+    font-size: 18px;
+    cursor: pointer;
+    border: 2px solid blacks;
+    background-color: #ec1330;
+    color: white;
+    border-radius: 5px;
+    transition: transform 4s ease-in-out;
+    animation: cambiocolor 5s ease-in-out infinite, boxshadowcolor 3s infinite; 
+}
+
+
+@keyframes salto {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateY(40px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+@keyframes botonColor{
+    0% {
+        background-color: aquamarine;
+    }
+    50% {
+        background-color: blueviolet;
+    }
+    70% {
+        background-color: darkgreen;
+    }
+    100% {
+        background-color: chocolate;
+    }
+}
+@keyframes boxshadowcolor {
+    0% {
+        box-shadow: -7px 6px 11px yellowgreen;
+    }
+    35% {
+        box-shadow: 4px -5px 11px steelblue;
+    }
+    50% {
+        box-shadow: -4px 6px 11px violet;
+    }
+    75% {
+        box-shadow: 7px -6px 11px rgb(26, 18, 136);
+    }
+    100% {
+        box-shadow: -7px 7px 11px rgba(41, 136, 190, 0.644);
+    }
+}
+@keyframes latido {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+@keyframes cambiocolor {
+    0% {
+        background: linear-gradient(to right, rgb(30, 172, 30), rgb(11, 57, 185));
+    }
+    50% {
+        background: linear-gradient(to left, rgb(201, 212, 35), rgba(226, 81, 37, 0.925));
+    }
+    100% {
+        background: linear-gradient(to bottom, rgb(102, 15, 114), rgb(182, 88, 185));
+    }
+}

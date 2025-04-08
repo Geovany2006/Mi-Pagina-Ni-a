@@ -1,0 +1,21 @@
+#intro {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    text-shadow: 4px 6px 7px teal;
+    text-align: center;
+    text-decoration: underline;
+}
+#parrafos {
+    font-family: Courier New;
+    font-size: 30px;
+}
+#foto2 {
+    display: flex;
+    background-image: url(imagenesOsitos/Osito2.gif);
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+
+}
